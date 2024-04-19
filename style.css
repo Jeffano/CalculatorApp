@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #343a40;
+    color: #fff;
+}
+h2{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+
+}
+#calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #212529;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+#display {
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #495057;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+#memory-display-oop {
+    width: calc(100%);
+    margin-bottom: 20px;
+    padding: 50px;
+    font-size: 24px;
+    background-color: #495057;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 20px;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    max-height: 200px; /* Set maximum height to enable scrolling */
+}
+#memory-display-rpn {
+    width: calc(100%);
+    margin-bottom: 20px;
+    padding: 50px;
+    font-size: 24px;
+    background-color: #495057;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 20px;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    max-height: 200px; /* Set maximum height to enable scrolling */
+}
+
+#memory-display-infix {
+    width: calc(100%);
+    margin-bottom: 20px;
+    padding: 50px;
+    font-size: 24px;
+    background-color: #495057;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 20px;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    max-height: 200px; /* Set maximum height to enable scrolling */
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-auto-rows: minmax(50px, auto); /* Automatically adjust row height */
+    gap: 5px; /* Gap between buttons */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+button {
+    padding: 15px; /* Adjust padding as needed */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #343a40;
+}
+
+#infix-display,
+#rpn-display,
+#stack-display,
+#oop-display {
+    width: calc(100%);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #212529;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center; /* Center-align the content */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 5px; /* Gap between cells */
+    box-sizing: border-box;
+}

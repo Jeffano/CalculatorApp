@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <!-- INFIX Calculator Section -->
+    <div id="infix-calculator" class="calculator-section">
+        <h2>INFIX Calculator</h2>
+        <input type="text" id="infix-display" readonly>
+        <div id="infix-buttons" class="calculator-buttons">
+            <button class="infix-memory-save">Memory Save</button>
+            <button class="infix-memory-recall">Memory Recall</button>
+            <button class="infix-memory-clear">Memory Clear</button>
+            <button id="button-infix-1">1</button>
+            <button id="button-infix-2">2</button>
+            <button id="button-infix-3">3</button>
+            <button id="button-infix-4">4</button>
+            <button id="button-infix-5">5</button>
+            <button id="button-infix-6">6</button>
+            <button id="button-infix-7">7</button>
+            <button id="button-infix-8">8</button>
+            <button id="button-infix-9">9</button>
+            <button id="button-infix-0">0</button>
+            <button id="button-infix-plus">+</button>
+            <button id="button-infix-minus">-</button>
+            <button id="button-infix-multiply">x</button>
+            <button id="button-infix-divide">÷</button>
+            <button id="button-infix-equal">=</button>
+            <button id="button-infix-clear">Clear</button>
+        </div>
+        <div id="memory-output-infix">
+            <textarea id="memory-display-infix" readonly></textarea>
+        </div>
+    </div>
+
+    <!-- RPN Calculator Section -->
+    <div id="rpn-calculator" class="calculator-section">
+        <h2>RPN Calculator</h2>
+        <input type="text" id="stack-display" readonly>
+        <input type="text" id="rpn-display" readonly>
+        <div id="rpn-buttons" class="calculator-buttons">
+            <button class="rpn-memory-save">Memory Save</button>
+            <button class="rpn-memory-recall">Memory Recall</button>
+            <button class="rpn-memory-clear">Memory Clear</button>
+            <button id="button-rpn-1">1</button>
+            <button id="button-rpn-2">2</button>
+            <button id="button-rpn-3">3</button>
+            <button id="button-rpn-4">4</button>
+            <button id="button-rpn-5">5</button>
+            <button id="button-rpn-6">6</button>
+            <button id="button-rpn-7">7</button>
+            <button id="button-rpn-8">8</button>
+            <button id="button-rpn-9">9</button>
+            <button id="button-rpn-0">0</button>
+            <button id="button-rpn-plus">+</button>
+            <button id="button-rpn-minus">-</button>
+            <button id="button-rpn-multiply">x</button>
+            <button id="button-rpn-divide">÷</button>
+            <button id="button-rpn-enter">Enter</button>
+            <button id="button-rpn-clear">Clear</button>
+        </div>
+        <div id="memory-output-rpn">
+            <textarea id="memory-display-rpn" readonly></textarea>
+        </div>
+    </div>
+
+    <!-- INFIX with Brackets Calculator Section -->
+        <h2>Order of Operations</h2>
+        <input type="text" id="oop-display" readonly>
+        <div id="infix-brackets-buttons" class="calculator-buttons">
+            <button class="infix-brackets-memory-save">Memory Save</button>
+            <button class="infix-brackets-memory-recall">Memory Recall</button>
+            <button class="infix-brackets-memory-clear">Memory Clear</button>
+            <button id="oop-1">1</button>
+            <button id="oop-2">2</button>
+            <button id="oop-3">3</button>
+            <button id="oop-4">4</button>
+            <button id="oop-5">5</button>
+            <button id="oop-6">6</button>
+            <button id="oop-7">7</button>
+            <button id="oop-8">8</button>
+            <button id="oop-9">9</button>
+            <button id="oop-0">0</button>
+            <button id="oop-open-bracket">(</button>
+            <button id="oop-close-bracket">)</button>
+            <button id="oop-plus">+</button>
+            <button id="oop-minus">-</button>
+            <button id="oop-multiply">x</button>
+            <button id="oop-divide">÷</button>
+            <button id="oop-equal">Enter</button>
+            <button id="oop-clear">Clear</button>
+        </div>
+        <div id="memory-output-oop">
+            <textarea id="memory-display-oop" readonly></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js" type="text/javascript"></script>
+<script src="script.js"></script>
+</body>
+</html>
